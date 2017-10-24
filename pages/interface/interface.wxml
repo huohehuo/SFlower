@@ -1,0 +1,47 @@
+<import src="../../style/footer.wxml" />
+<view class="page">
+  <view class="page__hd i-header">
+    <view class="i-header-h1 h50">专业插花工艺服务</view>
+    <view class="i-header-h1">多彩花卉设计</view>
+  </view>
+  <view class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+    <view class="weui-cell__hd">
+      <image src="/image/location.png" style="width: 29px;height: 29px;margin-right: 5px" />
+    </view>
+    <view bindtap="goToLoaction" class="weui-cell__bd weui-cell_primary">
+      <view>地址：钦州市年年丰五楼插花工坊</view>
+    </view>
+    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </view>
+  <view class='weui-cell weui-cell_access'>
+
+  </view>
+
+  <view class='view-ftext'>
+    <text class="ftext">我情愿 分合的无奈\n 能换来春夜的天籁\n</text>
+    <text class="ftext">我情愿 现在与未来\n 能充满秋凉的爽快\n</text>
+    <text class="ftext">SAY GOODBYE \nSAY GOODBYE</text>
+  </view>
+  <view>
+    <image class="f3" src="/image/f3.png" />
+    <view class='view-f1-2'>
+      <image class="f1-2" src="/image/f1.png" />
+      <image class="f1-2" src="/image/f2.png" />
+    </view>
+  </view>
+  <!-- <view class="page__bd">
+    <view class="weui-grids">
+      <block wx:for-items="{{grids}}" wx:key="{{index}}">
+        <navigator bindtap="{{item.click}}" class="weui-grid" wx:if="{{item.click}}" hover-class="weui-grid_active">
+          <image class="weui-grid__icon" src="/image/{{item.ico}}" />
+          <view class="weui-grid__label">{{item.name}}</view>
+        </navigator>
+        <navigator url="{{item.url}}" class="weui-grid" wx:if="{{!item.click}}" hover-class="weui-grid_active">
+          <image class="weui-grid__icon" src="/image/{{item.ico}}" />
+          <view class="weui-grid__label">{{item.name}}</view>
+        </navigator>
+      </block>
+    </view>
+  </view> -->
+  <template is="foot" />
+</view>

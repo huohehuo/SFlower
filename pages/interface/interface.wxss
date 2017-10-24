@@ -1,0 +1,36 @@
+@import "../common/index.wxss";
+.navigator-hover button{
+  background-color: #DEDEDE;
+}
+.other-navigator-hover button{
+  background-color: #DEDEDE;
+}
+.view-all{
+  flex: 1;
+  flex-direction: column;
+}
+.f3{
+  width:100%;
+}
+.view-f1-2{
+  width: 100%;
+  margin: 20px;
+  justify-content: center;
+}
+.f1-2{
+  width: 130px;
+  height: 190px;
+  padding: 5px;
+}
+.ftext{
+  margin-left: 45px;
+  color: #000;
+  font-size: 20px;
+  text-align: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.view-ftext{
+  margin: 20px;
+}
