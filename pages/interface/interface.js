@@ -18,7 +18,16 @@ var grids = [
 Page({    
     data: {        
         userInfo: {},
-        grids: grids
+        grids: grids,
+        imgUrls: [
+          'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
+          'http://bmob-cdn-14674.b0.upaiyun.com/2017/10/22/7aac40a640c1b6fe80856a3826195055.png',
+          'http://bmob-cdn-14674.b0.upaiyun.com/2017/10/22/7aac40a640c1b6fe80856a3826195055.png'
+        ],
+        indicatorDots: true,
+        autoplay: true,
+        interval: 3000,
+        duration: 1000
     
     },
     onLoad:function(){
@@ -44,4 +53,24 @@ Page({
         name: "达兴插花"
       })
     },
+    changeIndicatorDots: function (e) {
+      this.setData({
+        indicatorDots: !this.data.indicatorDots
+      })
+    },
+    changeAutoplay: function (e) {
+      this.setData({
+        autoplay: !this.data.autoplay
+      })
+    },
+    intervalChange: function (e) {
+      this.setData({
+        interval: e.detail.value
+      })
+    },
+    durationChange: function (e) {
+      this.setData({
+        duration: e.detail.value
+      })
+    }
 })

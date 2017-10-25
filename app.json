@@ -1,6 +1,6 @@
 {
   "pages":[
-    "pages/interface/interface",
+    "pages/hot/hot",
     "pages/logs/logs",
     "pages/interface/article/detail/index",
     "pages/account/feedback/feedback",
@@ -21,10 +21,10 @@
     "backgroundColor": "#ffffff",
     "list": [
       {
-        "pagePath": "pages/interface/interface",
+        "pagePath": "pages/hot/hot",
         "iconPath": "image/flower_nor.png",
         "selectedIconPath": "image/flower.png",
-        "text": "首页"
+        "text": "最热"
       },
       {
         "pagePath": "pages/account/account",

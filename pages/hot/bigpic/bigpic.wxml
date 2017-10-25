@@ -1,0 +1,4 @@
+<view>
+  <image src="{{bigpic}}" style="width:{{systemInfo.windowWidth}}px;height:{{systemInfo.windowWidth}}px"></image>
+
+</view>

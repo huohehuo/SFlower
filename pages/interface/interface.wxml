@@ -1,5 +1,13 @@
 <import src="../../style/footer.wxml" />
 <view class="page">
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" height="180"/>
+    </swiper-item>
+  </block>
+</swiper>
   <view class="page__hd i-header">
     <view class="i-header-h1 h50">专业插花工艺服务</view>
     <view class="i-header-h1">多彩花卉设计</view>
