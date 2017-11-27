@@ -4,7 +4,7 @@ Page({
   data: {
     picwidth:0,
     systemInfo: {},
-    navbar: ['推荐', '新作','今日'],
+    navbar: ['推荐', '今日','ALL'],
     currentNavbar: '0',
     swipers: [],
     list: [

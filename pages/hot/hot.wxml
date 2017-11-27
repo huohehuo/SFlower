@@ -37,7 +37,7 @@
 </scroll-view>
 
 <!-- 最新 -->
-<scroll-view class="latest-item-container {{currentNavbar==1 ? '' : 'hidden'}}" style="height: {{systemInfo.windowHeight}}px;" scroll-y="true" bindscrolltolower="pullUpLoadLatest">
+<scroll-view class="latest-item-container {{currentNavbar==2 ? '' : 'hidden'}}" style="height: {{systemInfo.windowHeight}}px;" scroll-y="true" bindscrolltolower="pullUpLoadLatest">
   <block wx:for="{{latest_list}}" wx:for-index="idx">
     <view wx:if="{{idx%2===0}}" class="latest-item">
       <image src="{{latest_list[idx]}}" class="latest-image"
@@ -52,7 +52,7 @@
   </block>
 </scroll-view>
 <!-- 最新 -->
-<scroll-view class="latest-item-container {{currentNavbar==2 ? '' : 'hidden'}}" style="height: {{systemInfo.windowHeight}}px;" scroll-y="true" bindscrolltolower="pullUpLoadLatest">
+<scroll-view class="latest-item-container {{currentNavbar==1 ? '' : 'hidden'}}" style="height: {{systemInfo.windowHeight}}px;" scroll-y="true" bindscrolltolower="pullUpLoadLatest">
 <view class='view-ftext'>
     <text class="ftext">{{today_text_1}}\n</text>
       <text class="ftext" style="margin-left: 35px;">{{today_text_2}}\n</text>  
