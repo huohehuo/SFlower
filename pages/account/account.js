@@ -20,6 +20,16 @@ Page({
     
     about: function (e) {
          common.showModal('插花设计，分享你我');
+    },
+    scanSide:function(e){
+      // 只允许从相机扫码
+      wx.scanCode({
+        onlyFromCamera: true,
+        success(res) {
+          console.log(res)
+          common.showModal('扫码获取：'+res.result);
+        }
+      })
     }
 
 })
